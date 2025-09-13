@@ -26,6 +26,7 @@ public class Aluno extends Pessoa implements Serializable {
         this.notas = new ArrayList<>(); //  inicializa a lista de Notas
         
     }
+    
 
     // Construtor completo
     public Aluno(String nome, int idade, String numeroDocumento, String morada,

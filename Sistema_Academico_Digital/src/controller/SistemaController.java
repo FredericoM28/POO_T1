@@ -135,6 +135,8 @@ public class SistemaController {
         a.setTipoAluno("NAO_BOLSEIRO");
         a.setDisciplinas(new ArrayList<>());
         a.setNotas(new ArrayList<>());
+        a.setSenha("Estudante0000");  // senha padrao
+
         alunos.add(a);
         saveAlunos();
     }
@@ -195,6 +197,7 @@ public class SistemaController {
         p.setDisciplinaPrincipal(disciplinaPrincipal);
         p.setSalario(salario);
         p.setTurmas(new ArrayList<>());
+        p.setSenhaProf("Professor0000");
         professores.add(p);
         saveProfessores();
     }

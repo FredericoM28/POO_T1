@@ -27,6 +27,17 @@ public class Turma  implements Serializable{
     }
 
 
+    @Override
+    public String toString() {
+        return "Turma [idTurma=" + idTurma + ", disciplina=" + disciplina + ", curso=" + curso + ", professor="
+                + professor + ", ano=" + ano + ", semestre=" + semestre + ", capacidade=" + capacidade + ", alunos="
+                + alunos + ", getIdTurma()=" + getIdTurma() + ", getDisciplina()=" + getDisciplina() + ", getCurso()="
+                + getCurso() + ", getProfessor()=" + getProfessor() + ", getAno()=" + getAno() + ", getSemestre()="
+                + getSemestre() + ", getCapacidade()=" + getCapacidade() + ", getAlunos()=" + getAlunos()
+                + ", toString()=" + super.toString() + "]";
+    }
+
+
     public Turma() {
         
     }

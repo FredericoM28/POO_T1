@@ -32,6 +32,13 @@ public class Curso  implements Serializable{
     public void setDisciplinas(List<Disciplina> disciplinas) {
         this.disciplinas = disciplinas;
     }
+    @Override
+    public String toString() {
+        return "Curso [codigo=" + codigo + ", nome=" + nome + ", disciplinas=" + disciplinas + ", getCodigo()="
+                + getCodigo() + ", getNome()=" + getNome() + ", getDisciplinas()=" + getDisciplinas() + ", toString()="
+                + super.toString() + "]";
+    }
 
 
+    
 }

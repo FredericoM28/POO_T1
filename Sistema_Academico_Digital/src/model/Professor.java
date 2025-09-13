@@ -39,7 +39,15 @@ public class Professor extends Pessoa implements Serializable {
     }
 
     // Getters e Setters
+
+    
     public String getIdProfessor() { return idProfessor; }
+    @Override
+    public String toString() {
+        return "Professor [idProfessor=" + idProfessor + ", disciplinaPrincipal=" + disciplinaPrincipal + ", salario="
+                + salario + ", turmas=" + turmas + ", senhaProf=" + senhaProf + ", getTurmas()=" + getTurmas()
+                + ", toString()=" + super.toString() + "]";
+    }
     public void setIdProfessor(String idProfessor) { this.idProfessor = idProfessor; }
 
     public String getDisciplinaPrincipal() { return disciplinaPrincipal; }

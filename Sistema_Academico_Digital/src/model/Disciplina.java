@@ -16,7 +16,18 @@ public class Disciplina implements Serializable {
         this.curso = curso;
         this.idProfessor = idProfessor;
     }
+
     
+    
+    @Override
+    public String toString() {
+        return "Disciplina [codigo=" + codigo + ", nome=" + nome + ", curso=" + curso + ", idProfessor=" + idProfessor
+                + ", getCodigo()=" + getCodigo() + ", getNome()=" + getNome() + ", getCurso()=" + getCurso()
+                + ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
+    }
+
+
+
     public String getCodigo() {
         return codigo;
     }
